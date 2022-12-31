@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIFI | Cardano Staking Pool</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="glow-orb.css">
+    <!-- SCRIPT -->
+    <script defer src="js/fontawesome/all.min.js"></script>
+    <script src="js/glow.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="header-btn-container">
+            <div class="header-btn landing-modal-trigger">
+                Stake to SCIFI
+            </div>
+            <svg class="svgStroke" width="222" height="85" viewBox="0 0 222 85" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M205 84H21L1 63.4941V18.5765L21 1H205L221 18.5765V63.4941L205 84Z" stroke="white"
+                    stroke-width="2" />
+            </svg>
+        </div>
+
+        <div class="header-socials">
+            <li><a href="https://twitter.com/scifi_pool"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://discord.gg/kzHsEQMJbt"><i class="fab fa-discord" aria-hidden="true"></i></a></li>
+            <li><a href="https://t.me/scifipool"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+        </div>
+
+    </header> <!-- HEADER END -->
+
+    <section id="landing" class="landing">
+
+        <div class="landing-content bg-animation">
+            <canvas id="bg-animation"></canvas>
+            <div class="landing-content">
+                <div class="landing-content-text">
+                    <h3>
+                        Powering Cardano
+                    </h3>
+                    <h1>
+                        <span id="glow-animation">SCIFI POOL</span>
+                    </h1>
+                </div>
+            </div>
+            <script>
+                const heading = document.querySelector('#glow-animation');
+                backlight(heading, '150vw', 1.15, ['#022ea8', '#001aff', '#7702a6', '#9e06bd', '#8000ff', '#4c00ff'], 15000);
+            </script>
+        </div> <!-- END CONTENT-TEXT -->
+        </div> <!-- END CONTENT -->
+        </div> <!-- END LANDING-CONTENT -->
+    </section>
+
+
+    <div class="landing-modal">
+        <div class="landing-modal-inner">
+            <span class="landing-modal-close"></span>
+
+            <a href="https://cexplorer.io/pool/pool1lncn6a8xy3dm203m80hr4d4qm53h22a48e2s703z9qr9c20akka"
+                target="_blank"><img style="width:100%;max-width:700px" class="img-fluid"
+                    src="https://js.cexplorer.io/img/p-e/pool1lncn6a8xy3dm203m80hr4d4qm53h22a48e2s703z9qr9c20akka.er.jpg"
+                    alt="Cardano Stake Pool | SCIFI | pool1lncn6a8xy3dm203m80hr4d4qm53h22a48e2s703z9qr9c20akka"></a>
+                    <span class="btn-spacer"></span>
+            <a
+                href="https://cexplorer.io/pool/pool1lncn6a8xy3dm203m80hr4d4qm53h22a48e2s703z9qr9c20akka/delegate#instant">
+                <input type="submit" name="stake" value="Stake" class="landing-modal-btn">
+            </a>
+
+        </div> <!-- END LANDING-MODAL-INNER -->
+    </div> <!-- END LANDING-MODAL -->
+
+    <div class="landing-scroll">
+        <a href="#info" class="scroll-link smoothscroll">
+            Scroll For More
+        </a>
+    </div> <!-- END LANDING-SCROLL -->
+    </section> <!-- END LANDING -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/stars.js"></script>
+</body>
+
+</html>
