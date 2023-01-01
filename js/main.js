@@ -1,9 +1,9 @@
-
 // MODAL
 const modal = function () {
 
     const modal = document.querySelector(".landing-modal");
     const trigger = document.querySelector(".landing-modal-trigger");
+    const trigger2 = document.querySelector(".landing-modal-trigger2");
     const closeButton = document.querySelector(".landing-modal-close");
 
     function toggleModal() {
@@ -21,6 +21,7 @@ const modal = function () {
     }
 
     trigger.addEventListener("click", toggleModal);
+    trigger2.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
     window.addEventListener("keyup", pressEsc);
@@ -28,6 +29,6 @@ const modal = function () {
 };
 
 
-(function ssInit() {
+(function Init() {
     modal();
 })();
