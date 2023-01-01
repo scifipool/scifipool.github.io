@@ -269,4 +269,6 @@ function drawStars(){
   }
 }
 
-requestAnimFrame(executeFrame);
+if ( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  requestAnimFrame(executeFrame);
+}

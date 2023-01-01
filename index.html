@@ -9,6 +9,10 @@
     <meta name="author" content="">
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap" rel="stylesheet">
     <!-- SCRIPT -->
     <script defer src="js/fontawesome/all.min.js"></script>
     <script src="js/glow.js"></script>
@@ -18,6 +22,11 @@
 
     <header class="header">
         <!-- BUTTON FOR DESKTOP -->
+        <div class="header-socials-mobile">
+            <li><a href="https://twitter.com/scifi_pool"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://discord.gg/kzHsEQMJbt"><i class="fab fa-discord" aria-hidden="true"></i></a>
+            <a href="https://t.me/scifipool"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+        </div>
         <div class="header-btn-container">
             <div class="header-btn landing-modal-trigger">
                 Stake to SCIFI
@@ -64,7 +73,9 @@
             </div>
             <script>
                 const heading = document.querySelector('#glow-animation');
-                backlight(heading, '150vw', 1.15, ['#022ea8', '#001aff', '#7702a6', '#9e06bd', '#8000ff', '#4c00ff'], 15000);
+                if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    backlight(heading, '150vw', 1.15, ['#022ea8', '#001aff', '#7702a6', '#9e06bd', '#8000ff', '#4c00ff'], 15000);
+                }
             </script>
         </div> <!-- END CONTENT-TEXT -->
         </div> <!-- END CONTENT -->

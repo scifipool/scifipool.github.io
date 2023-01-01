@@ -29,6 +29,16 @@ body {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('./graphic/mobile-bg.png');
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+}
+
 /* LITERATURE */
 
 a {
@@ -37,7 +47,7 @@ a {
 }
 
 h1 .h1 {
-    font-family: "Oswald", "sans-serif";
+    font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #000000;
@@ -46,7 +56,8 @@ h1 .h1 {
 }
 
 h3 .h3 {
-    font-family: "Futura", "sans-serif";
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
     font-style: normal;
     color: #000000;
     font-variant-ligatures: common-ligatures;
@@ -109,6 +120,28 @@ li {
     transform: translate3d(22px, -130px, 0);
 }
 
+.header-socials-mobile {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    white-space: nowrap;
+}
+
+/* HEADER MOBILE */
+@media only screen and (max-width: 768px) {
+    .header-socials {
+        visibility: hidden;
+    }
+
+    .header-socials-mobile svg {
+        visibility: visible;
+        padding: 0 25px;
+    }
+}
+
+
 /* LANDING */
 .landing {
     width: 100%;
@@ -118,6 +151,12 @@ li {
     overflow: hidden;
     position: relative;
 }
+
+@media only screen and (max-width: 768px) {
+    .landing {
+        background-color: unset;
+    }
+    }
 
 .landing::after {
     display: block;
@@ -157,8 +196,8 @@ li {
 }
 
 .landing-content-text h3 {
-    font-family: "futura", sans-serif;
-    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
     font-size: 2.8rem;
     margin-top: 15rem;
     padding-left: 1rem;
@@ -166,12 +205,13 @@ li {
     letter-spacing: .55em;
     color: #ffffff;
     position: relative;
+    white-space: nowrap;
 }
 
 .landing-content-text h1 {
     flex: 0 0 auto;
     white-space: nowrap;
-    font-family: "OSWALD", serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 16rem;
     line-height: 1.1;
@@ -256,12 +296,14 @@ li {
         justify-content: center;
         align-content: center;
     }
+
     .landing-content-text h3 {
         font-size: 2.7rem;
         height: 5%;
         padding-left: 0;
         padding-bottom: 1.5rem;
     }
+
     .landing-content-text h1 {
         font-size: 10.0rem;
         white-space: normal;
@@ -277,12 +319,14 @@ li {
         justify-content: center;
         align-content: center;
     }
+
     .landing-content-text h3 {
         font-size: 1.85rem;
         height: 5%;
         padding-left: 0;
         padding-bottom: 1.5rem;
     }
+
     .landing-content-text h1 {
         font-size: 6.8rem;
         white-space: normal;
@@ -298,19 +342,21 @@ li {
         justify-content: center;
         align-content: center;
     }
+
     .landing-content-text h3 {
-        font-size: 1.35rem;
+        font-size: 1.1rem;
         height: 5%;
         padding-left: 0;
         padding-bottom: 0;
     }
+
     .landing-content-text h1 {
-        font-size: 5.1rem;
+        font-size: 4.5rem;
         white-space: normal;
         line-height: 0.75;
     }
 }
-  
+
 
 
 
@@ -350,8 +396,8 @@ li {
     color: #6f86d6;
     letter-spacing: 1px;
     font-size: 6em;
-    font-weight: 700;
-    font-family: 'Futura', 'Helvetica Neue', Helvetica;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
     background: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
     background: -moz-linear-gradient(transparent, transparent);
     -webkit-background-clip: text;
@@ -372,13 +418,14 @@ li {
     display: flex;
     position: absolute;
     gap: 10px;
-    font-family: "Futura", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 3rem;
     padding: 11px 20px 10px 20px;
     background-color: transparent;
     cursor: pointer;
-    transition: 0.2s ease-out;
+    /* transition: 0.2s ease-out; */
     white-space: nowrap;
 }
 
@@ -392,18 +439,7 @@ li {
     stroke-dasharray: 100;
     stroke-dashoffset: -800;
     stroke-width: 2;
-    transition: all 1s ease-in-out;
-}
-
-
-.header-btn-mobile:hover+.svgStroke-mobile path {
-    cursor: pointer;
-    animation: dash 6.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    animation-iteration-count: infinite;
-}
-
-.header-btn-mobile:hover {
-    text-shadow: 0 0 30px #fff;
+    /* transition: all 1s ease-in-out; */
 }
 
 
@@ -425,10 +461,11 @@ li {
     display: flex;
     position: absolute;
     gap: 10px;
-    font-family: "Futura", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
     font-size: 3rem;
-    padding: 11px 20px 10px 20px;
+    padding: 8px 20px 10px 20px;
     background-color: transparent;
     cursor: pointer;
     transition: 0.2s ease-out;
@@ -441,11 +478,11 @@ li {
     width: 300px;
 }
 
-.header-btn .svgStroke path {
+.header-btn-container .svgStroke path {
     stroke-dasharray: 100;
     stroke-dashoffset: -800;
     stroke-width: 2;
-    transition: all 1s ease-in-out;
+    /* transition: all 1s ease-in-out; */
 }
 
 @keyframes dash {
@@ -459,8 +496,7 @@ li {
         stroke-dasharray: 100;
         stroke-dashoffset: 600;
         stroke-width: 4;
-        stroke: paleturquoise;
-        filter: drop-shadow(0px 0px 50px #002c5eb7) drop-shadow(0px 0px 100px #002c5eb7) drop-shadow(0px 0px 150px #0053b3b7);
+        stroke: rgb(255, 255, 255);
     }
 
     100% {
@@ -506,25 +542,31 @@ li {
 
 }
 
-/* styles for screens between 480px and 768px wide */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .header-btn-container {
         visibility: hidden;
     }
+
     .header-btn {
         visibility: hidden;
     }
+}
+
+/* styles for screens between 480px and 768px wide */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     .header-btn-container-mobile {
         display: flex;
         visibility: visible;
         align-content: center;
         top: 54%;
-        
+
     }
+
     .header-btn-mobile {
         visibility: visible;
         padding: 10px 20px 10px 20px;
     }
+
     .svgStroke-mobile {
         width: "222";
         height: "85";
@@ -533,23 +575,23 @@ li {
 
 /* styles for screens between 320px and 480px wide */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .header-btn-container {
-        visibility: hidden;
-    }
     .header-btn-container-mobile {
         visibility: visible;
     }
+
     .header-btn-container-mobile {
         display: flex;
         visibility: visible;
         align-content: center;
         top: 50%;
-        
+
     }
+
     .header-btn-mobile {
         visibility: visible;
         padding: 10px 20px 10px 20px;
     }
+
     .svgStroke-mobile {
         width: "222";
         height: "85";
@@ -557,24 +599,24 @@ li {
 }
 
 @media only screen and (max-width: 320px) {
-    .header-btn-container {
-        visibility: visible;
-    }
     .header-btn-container-mobile {
         visibility: visible;
     }
+
     .header-btn-container-mobile {
         display: flex;
         visibility: visible;
         align-content: center;
-        top: 44%;
-        
+        top: 45%;
+
     }
+
     .header-btn-mobile {
         visibility: visible;
         padding: 10px 20px 10px 20px;
         font-size: 2.4rem;
     }
+
     .svgStroke-mobile {
         width: 188.7px;
         height: 72.25px;
@@ -712,8 +754,8 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    font-family: "Futura", sans-serif;
-    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
     font-size: 2.1rem;
     text-transform: uppercase;
     letter-spacing: .6rem;
