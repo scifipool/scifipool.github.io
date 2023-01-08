@@ -36,6 +36,7 @@ body {
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
+        overflow: hidden scroll;
     }
 }
 
@@ -892,18 +893,19 @@ input[type="submit"] {
     padding: 0;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 500;
 }
 
 .about-btn-stroke {
     background: transparent !important;
     border: 0.2rem solid #000000;
-    color: #000000;
+    color: #ffffff;
 }
 
 .about-btn-stroke:hover {
-    background: #0000009a !important;
+    background: #ffffff9a !important;
     border: 0.2rem solid #000000;
-    color: #ffffff;
+    color: #000000;
 }
 
 .landing-modal-btn:hover {
@@ -914,6 +916,12 @@ input[type="submit"] {
 
 .about-btn-mobile {
     display: none;
+}
+
+.about-btn-mobile-stroke {
+    background: transparent !important;
+    border: 0.2rem solid #000000;
+    color: #ffffff;
 }
 
 
@@ -959,6 +967,10 @@ input[type="submit"] {
     top: 50%;
 }
 
+.mobile-hr {
+    visibility: hidden;
+}
+
 @media only screen and (max-width: 768px) {
     .about-btn-mobile {
         display: inline-block;
@@ -970,6 +982,10 @@ input[type="submit"] {
     .about-btn {
         display: none;
     }
+
+    .mobile-hr {
+        visibility: visible;
+    }    
 
     .landing-scroll {
         -webkit-transform: translate3d(0, -100%, 0);
@@ -1060,8 +1076,8 @@ input[type="submit"] {
     width: 100%;
     overflow: scroll;
     position: relative;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.616);
+    text-align: left;
+    color: rgba(255, 255, 255, 0.656);
 }
 
 .info h1,
@@ -1070,7 +1086,7 @@ input[type="submit"] {
 }
 
 .info h1 {
-    font-family: "future-earth", sans-serif;
+    font-family: "oswald", sans-serif;
     font-weight: 400;
     padding-bottom: 2.6rem;
     margin-bottom: 2.6rem;
@@ -1110,18 +1126,19 @@ input[type="submit"] {
     padding: 0;
 }
 
+
 p.lead {
     font-family: "Futura", sans-serif;
     font-weight: 400;
     font-size: 2.6rem;
     font-style: oblique;
-    line-height: 3.1rem;
+    line-height: 3.8rem;
     margin-bottom: 3.6rem;
-    color: #000000a8;
+    color: rgba(255, 255, 255, 0.816);
 }
 
 p.after-lead {
-    font-family: "Oswald", sans-serif;
+    font-family: "Futura", sans-serif;
     font-weight: 400;
     font-size: 3.5rem;
     margin-bottom: 3.6rem;
@@ -1129,13 +1146,17 @@ p.after-lead {
 }
 
 .content-title {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.90);
     text-decoration: underline;
+    font-weight: 400;
+    font-size: 3.8rem;
 }
 
 .content-sub-title {
-    color: rgba(0, 0, 0, 0.7);
-    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.80);
+    /* text-decoration: underline; */
+    font-size: 3.1rem;
+    font-weight: 500;
 }
 
 .contact-lead {
@@ -1163,22 +1184,22 @@ p.after-lead {
 }
 
 .contact-email {
-    display: inline-block;
+    display: block;
     font-family: "futura", sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     text-decoration: none;
-    ;
+    text-align: center;
     line-height: 1;
-    margin: 3.6rem 0 .8rem;
+    margin: 4.6rem 0 .8rem;
     color: #ffffff;
-    border-bottom: 1px solid #efefef;
+    /* border-bottom: 1px solid #efefef; */
 }
 
 .contact-email:hover,
 .contact-email:focus {
     color: #ffffff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
 }
 
 .contact-socials {
@@ -1200,6 +1221,7 @@ p.after-lead {
     z-index: 2;
     font-size: 1.7rem;
     position: relative;
+    text-align: center;
 }
 
 .footer-end span {
