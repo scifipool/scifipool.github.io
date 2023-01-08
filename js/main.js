@@ -3,7 +3,6 @@ const modal = function () {
 
     const modal = document.querySelector(".landing-modal");
     const trigger = document.querySelector(".landing-modal-trigger");
-    const trigger2 = document.querySelector(".landing-modal-trigger2");
     const closeButton = document.querySelector(".landing-modal-close");
 
     function toggleModal() {
@@ -21,7 +20,6 @@ const modal = function () {
     }
 
     trigger.addEventListener("click", toggleModal);
-    trigger2.addEventListener("click", toggleModal);
     closeButton.addEventListener("click", toggleModal);
     window.addEventListener("click", windowOnClick);
     window.addEventListener("keyup", pressEsc);
@@ -31,4 +29,28 @@ const modal = function () {
 
 (function Init() {
     modal();
+})();
+
+// TABS
+const Tabs = function() {
+
+    const $tabNavListItems = $("ul.tab-nav__list li");
+    const $tabContentItem  = $(".tab-content__item");
+
+    $tabContentItem.hide().first().show();
+
+    $tabNavListItems.on('click', function () {
+
+        $tabNavListItems.removeClass("active");
+        $(this).addClass("active");
+        $tabContentItem.hide();
+
+        const activeTab = $(this).attr("data-id");
+        $("#" + activeTab).fadeIn(1000);
+
+    });
+};
+
+(function Init() {
+    Tabs();
 })();
