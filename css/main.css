@@ -290,6 +290,20 @@ li {
 
 /* LANDING-CONTENT RESPONSIVENESS */
 
+@media only screen and (min-width:1921px) {
+    .landing-content-text {
+        right: 24%;
+    }
+
+    .landing-content-text h1 {
+        font-size: 22rem;
+    }
+
+    .landing-content-text h3 {
+        font-size: 3.6rem;
+    }
+}
+
 @media only screen and (min-width: 1600px) and (max-width: 1800px) {
     .landing-content-text {
         right: 15%;
@@ -985,7 +999,7 @@ input[type="submit"] {
 
     .mobile-hr {
         visibility: visible;
-    }    
+    }
 
     .landing-scroll {
         -webkit-transform: translate3d(0, -100%, 0);
@@ -1169,6 +1183,7 @@ p.after-lead {
 }
 
 
+
 @media screen and (max-width:1200px) {
     p.lead {
         font-size: 2.4rem;
@@ -1189,7 +1204,7 @@ p.after-lead {
     font-size: 2.5rem;
     font-weight: 700;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     line-height: 1;
     margin: 4.6rem 0 .8rem;
     color: #ffffff;

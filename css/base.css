@@ -3,8 +3,8 @@
 /* rows
  * ------------------------------------- */
  .row {
-	width: 89%;
-	max-width: 1400px;
+	width: 94%;
+	max-width: 1500px;
 	margin: 0 auto;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -103,3 +103,10 @@
     }
   
   }
+
+  @media screen and (min-width:1921px) {
+    .row {
+		width: 100%;
+		max-width: 1800px;
+    }
+}
