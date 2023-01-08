@@ -11,13 +11,13 @@ body {
     overflow: scroll;
     background-size: cover;
     /* image-rendering: pixelated; */
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
     display: block;
 }
 
 body {
     background: #ffffff;
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
     font-size: 2.8rem;
     font-style: normal;
     font-weight: normal;
@@ -45,11 +45,11 @@ body {
 a {
     color: rgba(255, 255, 255, 0.555);
     transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
 }
 
 p {
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
     font-size: 2.3rem;
 }
 
@@ -67,7 +67,7 @@ h1 .h1 {
 }
 
 h3 .h3 {
-    font-family: "futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     font-style: normal;
     color: #000000;
@@ -85,7 +85,7 @@ h4,
 .h4 {
     margin-top: 0.2rem;
     margin-bottom: 1.6rem;
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
 }
 
 ul {
@@ -245,7 +245,7 @@ li {
 }
 
 .landing-content-text h3 {
-    font-family: "futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 2.8rem;
     margin-top: 15rem;
@@ -373,7 +373,7 @@ li {
     }
 
     .landing-content-text h3 {
-        font-size: 2.49rem;
+        font-size: 2.29rem;
         height: 5%;
         padding-left: 0;
         padding-bottom: 1.5rem;
@@ -395,10 +395,10 @@ li {
     }
 
     .landing-content-text h3 {
-        font-size: 1.71rem;
-        height: 5%;
+        font-size: 1.56rem;
+        height: 2%;
         padding-left: 0;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     .landing-content-text h1 {
@@ -418,8 +418,8 @@ li {
     }
 
     .landing-content-text h3 {
-        font-size: 1.1rem;
-        height: 5%;
+        font-size: 0.98rem;
+        height: 2%;
         padding-left: 0;
         padding-bottom: 0;
     }
@@ -492,10 +492,10 @@ li {
     display: flex;
     position: absolute;
     gap: 10px;
-    font-family: "futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.55rem;
     padding: 11px 20px 10px 20px;
     background-color: transparent;
     cursor: pointer;
@@ -540,11 +540,11 @@ li {
     display: flex;
     position: absolute;
     gap: 10px;
-    font-family: "futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 3rem;
-    padding: 8px 20px 10px 20px;
+    font-size: 2.55rem;
+    padding: 10px 20px 10px 20px;
     background-color: transparent;
     cursor: pointer;
     transition: 0.2s ease-out;
@@ -643,7 +643,7 @@ li {
 
     .header-btn-mobile {
         visibility: visible;
-        padding: 6.5px 20px 10px 20px;
+        padding: 11px 20px 10px 20px;
     }
 
     .svgStroke-mobile {
@@ -668,7 +668,7 @@ li {
 
     .header-btn-mobile {
         visibility: visible;
-        padding: 6.5px 20px 10px 20px;
+        padding: 11px 20px 10px 20px;
     }
 
     .svgStroke-mobile {
@@ -687,13 +687,13 @@ li {
         display: flex;
         visibility: visible;
         align-content: center;
-        margin-top: 20rem;
+        margin-top: 28rem;
     }
 
     .header-btn-mobile {
         visibility: visible;
-        padding: 6.5px 20px 10px 20px;
-        font-size: 2.4rem;
+        padding: 11px 20px 10px 20px;
+        font-size: 2.2rem;
     }
 
     .svgStroke-mobile {
@@ -836,7 +836,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    font-family: "futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     font-size: 2.1rem;
     text-transform: uppercase;
@@ -1127,7 +1127,7 @@ input[type="submit"] {
     content: counter(ctr, decimal-leading-zero) ".";
     counter-increment: ctr;
     margin-bottom: 2rem;
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 700;
     font-size: 3.6rem;
     line-height: 1;
@@ -1140,9 +1140,13 @@ input[type="submit"] {
     padding: 0;
 }
 
+/* .lore-content {
+    background: #00000077;
+    color:#ffffff
+} */
 
 p.lead {
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 2.6rem;
     font-style: oblique;
@@ -1152,7 +1156,7 @@ p.lead {
 }
 
 p.after-lead {
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 3.5rem;
     margin-bottom: 3.6rem;
@@ -1161,9 +1165,8 @@ p.after-lead {
 
 .content-title {
     color: rgba(255, 255, 255, 0.90);
-    text-decoration: underline;
     font-weight: 400;
-    font-size: 3.8rem;
+    font-size: 4.1rem;
 }
 
 .content-sub-title {
@@ -1174,7 +1177,7 @@ p.after-lead {
 }
 
 .contact-lead {
-    font-family: "Futura", sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
     font-size: 2.6rem;
     line-height: 3.1rem;
@@ -1200,7 +1203,7 @@ p.after-lead {
 
 .contact-email {
     display: block;
-    font-family: "futura", sans-serif;
+    font-family: sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     text-decoration: none;
