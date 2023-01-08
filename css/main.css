@@ -1100,8 +1100,8 @@ input[type="submit"] {
 }
 
 .info h1 {
-    font-family: "oswald", sans-serif;
-    font-weight: 400;
+    font-family: sans-serif;
+    font-weight: 600;
     padding-bottom: 2.6rem;
     margin-bottom: 2.6rem;
     position: relative;
@@ -1145,6 +1145,10 @@ input[type="submit"] {
     color:#ffffff
 } */
 
+.tab-title {
+    text-align: center;
+}
+
 p.lead {
     font-family: sans-serif;
     font-weight: 400;
@@ -1159,6 +1163,7 @@ p.after-lead {
     font-family: sans-serif;
     font-weight: 400;
     font-size: 3.5rem;
+    text-align: center;
     margin-bottom: 3.6rem;
     color: rgba(255, 255, 255, 0.816);
 }
